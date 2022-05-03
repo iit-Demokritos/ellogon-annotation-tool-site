@@ -10,7 +10,6 @@ description: >
 The Ellogon Annotation Platform Cloud Services can be accessed through the following links:
 
 1. **[annotation.ellogon.org](https://annotation.ellogon.org)**
-
 2. **[annotation.vast-project.eu](https://annotation.vast-project.eu)**
 
 All links point to the <ins>same deployment</ins> of the Ellogon Annotation Platform (they are aliases).
