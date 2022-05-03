@@ -1,6 +1,6 @@
 baseURL = "/"
 enableRobotsTXT = true
-title = "The Ellogon Annotation Framework"
+title = "The Ellogon Annotation Platform"
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["docsy"]
@@ -69,13 +69,13 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "The Ellogon Annotation Framework"
-description = "An <b>open-source</b>, <b>free</b> to use, <b>customisable</b>, <b>collaborative</b> Data Annotation Frameworktool - in the cloud!"
+title = "The Ellogon Annotation Platform"
+description = "An <b>open-source</b>, <b>free</b> to use, <b>customisable</b>, <b>collaborative</b> Data Annotation Platformtool - in the cloud!"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 #[languages.no]
-#title = "The Ellogon Annotation Framework"
+#title = "The Ellogon Annotation Platform"
 #description = "Docsy er operativsystem for skyen"
 #languageName ="Norsk"
 #contentDir = "content/no"
@@ -99,7 +99,7 @@ weight = 1
 section = ["HTML", "print", "RSS"]
 
 [params]
-copyright = "The Ellogon Annotation Framework Authors |"
+copyright = "The Ellogon Annotation Platform Authors |"
 privacy_policy = ""
 
 # First one is picked as the Twitter card image if not set on page.
@@ -167,7 +167,7 @@ sidebar_search_disable = false
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = true
+enable = false
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
