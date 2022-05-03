@@ -1,0 +1,26 @@
+{{ $scssAndromeda := "scss/andromeda-light/style.scss" }}
+{{ $styles := resources.Get $scssAndromeda | resources.ExecuteAsTemplate $scssAndromeda . | toCSS | minify | fingerprint "sha512" }}
+<!--<style type="text/css">{{$styles.Content | safeCSS}}</style>-->
+
+<!-- plugins + stylesheet -->
+{{ $styles := slice }}
+{{ range site.Params.plugins.css }}
+{{ if findRE "^http" .link }}
+{{ else }}
+{{ $styles = $styles | append (resources.Get .link) }}
+{{ end }}
+{{ end }}
+{{ $styles := $styles | append (resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS) }}
+{{ $styles := $styles | resources.Concat "/css/style.css" | minify | fingerprint "sha512"}}
+<style type="text/css">{{$styles.Content | safeCSS}}</style>
+
+{{ $scssMain := "scss/main.scss" }}
+{{ if not hugo.IsProduction }}
+{{/* Note the missing postCSS. This makes it snappier to develop in Chrome, but makes it look sub-optimal in other browsers. */}}
+{{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" true) }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet">
+{{ else }}
+{{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" false) | postCSS | minify | fingerprint }}
+<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.integrity }}">
+{{ end }}

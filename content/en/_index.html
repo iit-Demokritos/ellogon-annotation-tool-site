@@ -1,26 +1,73 @@
-+++
-title = "The Ellogon Annotation Tool"
-linkTitle = "Ellogon Annotation Tool"
+---
+title: "The Ellogon Annotation Tool"
+linkTitle: "Ellogon Annotation Tool"
+description: "An <b>open-source</b>, <b>free</b> to use, <b>customisable</b>, <b>collaborative</b> Data Annotation Frameworktool - in the cloud!"
+---
 
-+++
-
+<!--
 {{< blocks/cover title="Welcome to the Ellogon Annotation Tool!" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
 		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-success mr-3 mb-4" href="https://annotation.elllogon.org" target="_blank">
+	<a class="btn btn-lg btn-success mr-3 mb-4" href="https://annotation.ellogon.org" target="_blank">
 		Start Annotating now! <i class="fas fa-tags ml-2 "></i>
 	</a>
 	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/iit-Demokritos/clarin-el-annotation-tool" target="_blank">
 		Download <i class="fab fa-github ml-2 "></i>
 	</a>
-	<p class="lead mt-5">Porridge temperature assessment - in the cloud!</p>
-	{{< blocks/link-down color="info" >}}
+	<p class="lead mt-5">An <b>open-source</b>, <b>free</b> to use, <b>customisable</b> data annotation tool - in the cloud!</p>
+	{{< blocks/link-down color="info" id="td-block-2" >}}
 </div>
 {{< /blocks/cover >}}
+-->
+
+<div class="hero">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-xl-7 col-lg-6 col-md-6 hero-section-mobile">
+        <h1 class="hero-title">
+          Open Source<br />
+          Data Annotation<br />
+          Framework
+        </h1>
+        <img
+          class="img-fluid hero-banner show-mobile-big"
+          src="/images/screenshots/2022/DebateLab.png"
+          alt-text="Annotation Framework Screenshot"
+        />
+        <br />
+        <a href="/docs/installation/"
+          ><button class="hero-big">
+            <i class="fas fa-tags mr-2"></i> Start Annotating Now!
+          </button></a
+        >
+      </div>
+
+      <div class="col-xl-5 col-lg-6 col-md-6 show-desktop-big">
+        <img
+          class="img-fluid hero-banner"
+          src="/images/screenshots/2022/DebateLab.png"
+          alt-text="Annotation Framework Screenshot"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<!--
+{{ with .Site.Params.banner }}
+{{ if .enable }}
+{{.Title}}
+{{< blocks/banner title="{{.title}}" button_link="{{.button_link}}" button_text="{{.button}}" >}}
+  {{< blocks/link-down color="info" id="td-block-2" >}}
+{{< /blocks/banner >}}
+{{ end }}
+{{ end }}
+-->
+
+<!--
 {{% blocks/lead color="primary" %}}
 Goldydocs provides a single web UI providing visibility into porridge temperature, chair size, and bed softness metrics! You can even find out who's been eating **your** porridge.
 
@@ -82,3 +129,5 @@ For announcement of latest features etc.
 </div>
 
 {{< /blocks/section >}}
+
+-->
