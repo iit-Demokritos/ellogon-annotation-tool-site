@@ -50,8 +50,8 @@ Beyond the installation process, which is required only for the second deploymen
 
 ## Ellogon Annotation Platform Concepts
 
-Visit [concepts]({{% ref "./concepts/" %}}) for more details.
+Visit [concepts](/docs/concepts/) for more details.
 
 ## Ellogon Annotation Platform Components and Architecture
 
-Visit [architecture]({{% ref "./concepts/architecture/" %}}) for more details.
+Visit [architecture](/docs/concepts/architecture/) for more details.

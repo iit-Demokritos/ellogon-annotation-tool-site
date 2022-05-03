@@ -228,21 +228,21 @@ enable = false
     disable = false    
 
 [menu]
-[[menu.main]]
-name = "About"
-url = "/about/"
-pre = "<i class='fas fa-info-square'></i>"
-weight = 10
+# [[menu.main]]
+# name = "About"
+# url = "/about/"
+# pre = "<i class='fas fa-info-square'></i>"
+# weight = 10
 [[menu.main]]
 name = "Documentation"
 url = "/docs/"
 pre = "<i class='fas fa-book'></i>"
 weight = 20
-[[menu.main]]
-name = "Blog"
-url = "/blog/"
-pre = "<i class='fas fa-blog'></i>"
-weight = 30
+# [[menu.main]]
+# name = "Blog"
+# url = "/blog/"
+# pre = "<i class='fas fa-blog'></i>"
+# weight = 30
 [[menu.main]]
 name = "Community"
 url = "/community/"
