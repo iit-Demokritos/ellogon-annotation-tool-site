@@ -99,7 +99,7 @@ weight = 1
 section = ["HTML", "print", "RSS"]
 
 [params]
-copyright = "The Ellogon Annotation Platform Authors |"
+copyright = "The Ellogon Annotation Platform Authors"
 privacy_policy = ""
 
 # First one is picked as the Twitter card image if not set on page.
