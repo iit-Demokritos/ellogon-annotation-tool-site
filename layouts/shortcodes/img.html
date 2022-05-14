@@ -32,7 +32,7 @@
 {{ $text  := $.Scratch.Get "text" }}
 
 <span class="post-img" style="width:{{ $width }};">
-    <img src="{{ $file }}" style="width:{{ $width }}; opacity:{{ $opacity }}" alt="{{ $alt }}" />
+    <img src="{{ .Page.Site.BaseURL }}{{ $file }}" style="width:{{ $width }}; opacity:{{ $opacity }}" alt="{{ $alt }}" />
     <p>{{ $alt }}</p>
 </span>
 {{ end }}
