@@ -696,7 +696,13 @@ a {
 .post-img {
   display: block;
 
-   > p {
+  > img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  > p {
       text-align: center;
       font-style: italic;
   }
